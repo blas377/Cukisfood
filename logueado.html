@@ -56,16 +56,15 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                Cuenta
+                                Mi Cuenta <i class="bi bi-house-door"></i>
                             </a>
                             <ul class="dropdown-menu pastel-light" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item pastel-light" href="#" data-bs-toggle="modal"
-                                        data-bs-target="#exampleModal">Iniciar sesión</a></li>
+                                        data-bs-target="#exampleModal">Mi perfil <i class="bi bi-person-circle"></i></a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item pastel-light" href="#" data-bs-toggle="modal"
-                                        data-bs-target="#exampleModal">Registrarse</a></li>
+                                <li><a class="dropdown-item pastel-light" href="index.html" >Desconectar <i class="bi bi-door-closed"></i></a></li>
                             </ul>
                         </li>
                     </ul>
@@ -82,7 +81,7 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header pastel">
-                        <h5 class="modal-title" id="exampleModalLabel">Inicio sesión</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Mi perfil <i class="bi bi-person-circle"></i></h5>
                         <button type="button" class="btn-close marron-light" data-bs-dismiss="modal"
                             aria-label="Close"></button>
                     </div>
@@ -90,27 +89,30 @@
                         <!-- Form -->
                         <form>
                             <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+                                <label for="exampleInputEmail1" class="form-label">Nombre</label>
                                 <input type="email" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="usuario@gmail.com">
-                                <div id="emailHelp" class="form-text pastel-light">No compartiremos tus datos con nadie.
-                                </div>
+                                    aria-describedby="emailHelp" placeholder="Usuario" value="Usuario">
                             </div>
                             <div class="mb-3">
-                                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                                <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="usuario@gmail.com" value="usuario@gmail.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Contraseña actual</label>
                                 <input type="password" class="form-control" id="exampleInputPassword1"
-                                    placeholder="**********">
+                                    placeholder="**********" value="**********">
                             </div>
-                            <div class="mb-3 form-check">
-                                <input type="checkbox" class="form-check-input marron" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">Recordar</label>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Cambiar contraseña</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                    placeholder="**********" value="**********">
                             </div>
-                            <a class="btn entrar" href="logueado.html">Entrar</a>
                         </form>
                     </div>
                     <div class="modal-footer marron-light">
                         <button type="button" class="btn marron" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn pastel">Regístrate</button>
+                        <button type="button" class="btn pastel" data-bs-dismiss="modal">Guardar cambios</button>
                     </div>
                 </div>
             </div>
@@ -165,6 +167,7 @@
         <!-- Intro  -->
         <div class="parent">
             <h1 id="tartas" class="p-3 fs-2 my-3 rosa-border-full text-center">Tartas hechas con mucho <span id="liveToastBtn" class="pastel-color"><i class="bi bi-heart-fill"></i></span></h1>
+
         </div>
         <div class="g-3 row m-0">
             <div class="col-12 col-md-6 col-lg-4">

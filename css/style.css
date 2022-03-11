@@ -1,6 +1,15 @@
+/*=========================ALL================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@500&display=swap');
+
+*{
+  font-family: 'Signika'!important;
+}
+
 /*=========================COLORS================================*/
 .pastel {
   background-color: #7b1fa2 !important;
+  box-shadow: 0 8px 32px 0 rgba(156, 79, 187, 0.50);
   color: #ffffff !important;
 }
 
@@ -9,8 +18,11 @@
 }
 
 .pastel-light {
-  background-color: #9c27b0 !important;
-  color: #ffffff !important;
+  background: rgba(225, 190, 231, 0.30);
+  box-shadow: 0 8px 32px 0 rgba(156, 79, 187, 0.50);
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #7b1fa2 !important;
 }
 
 .marron {
@@ -24,7 +36,33 @@
 }
 
 .rosa-border{
-  border-top: 2px solid #E1BEE7;
+  border-top: 2px solid #E1BEE7!important;
+}
+
+.rosa-border-full{
+  background: rgba(225, 190, 231, 0.30);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.entrar{
+  color: #757575 !important;
+  border: 1px solid #7b1fa2 !important;
+}
+
+.entrar:hover{
+  background-color: #7b1fa2 !important;
+  color: #ffffff !important;
+
+}
+
+/*=========================OTHERS================================*/
+
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*=========================CONTACT BACKGROUND================================*/
@@ -78,7 +116,7 @@ footer p {
     background-color: #f3f3f3;
     display:flex;
     justify-content: center; 
-    padding-bottom: 300px; 
+    padding-bottom: 180px; 
 }
 
 
@@ -91,4 +129,8 @@ footer p {
   .margenBottom {
     margin-bottom: -150px;
   }
+
+  #local {
+    padding-bottom: 300px; 
+}
 }
